@@ -13,10 +13,12 @@ int main(void)
 {
 	
 	char *cadena = NULL;
-	
+
+	//Verificar si es un palindromo
 	inputCadenaDinamica("\n Captura cadena: ",&cadena,MAX);
 	printf(" Es palindromo: %s", palindromo(cadena) ? "SI" : "NO");
 
+	//Verificar parentesis
 	inputCadenaDinamica("\n\n Captura expresion: ",&cadena,MAX);
 	printf(" Parentesis correctos : %s", verificarParentesis(cadena) ? "SI" : "NO");
 	
